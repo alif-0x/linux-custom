@@ -1,0 +1,101 @@
+super + 1
+    bspc desktop -f ^1
+
+super + 2
+    bspc desktop -f ^2
+
+super + 3
+    bspc desktop -f ^3
+
+super + 4
+    bspc desktop -f ^4
+
+super + 5
+    bspc desktop -f ^5
+
+super + 6
+    bspc desktop -f ^6
+
+super + 7
+    bspc desktop -f ^7
+
+super + 8
+    bspc desktop -f ^8
+
+super + 9
+    bspc desktop -f ^9
+
+super + shift + 1
+    bspc node -d ^1
+
+super + shift + 2
+    bspc node -d ^2
+
+super + shift + 3
+    bspc node -d ^3
+
+super + shift + 4
+    bspc node -d ^4
+
+super + shift + 5
+    bspc node -d ^5
+
+super + shift + 6
+    bspc node -d ^6
+
+super + shift + 7
+    bspc node -d ^7
+
+super + shift + 8
+    bspc node -d ^8
+
+super + shift + 9
+    bspc node -d ^9
+    
+shift + z
+    bspc desktop -f prev
+
+shift + x
+    bspc desktop -f next
+    
+super + shift + {1-9}
+  bspc node -d {1-9}
+
+# Terminal
+super + Return
+	alacritty
+
+# Close window
+super + q
+	bspc node -close
+
+# Kill window
+super + k
+  xkill
+
+# Reboot bspwm
+super + r
+	bspc wm -r
+
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
+
+super + shift + {h,j,k,l}
+	bspc node -s {west,south,north,east}
+
+# Rofi launcher
+super + d
+	rofi -show drun
+
+# Lock screen
+super + alt + l
+	betterlockscreen -l
+
+super + f
+	bspc node -t '~floating'
+
+super + {Left,Down,Up,Right}
+    bspc node -f {west,south,north,east}
+
+super + shift + {Left,Down,Up,Right}
+    bspc node -s {west,south,north,east}
