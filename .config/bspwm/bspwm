@@ -11,6 +11,6 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config focus_follows_pointer true
 
-feh --bg-fill ~/Pictures/wallpaper.jpg &
+feh --bg-fill ../wallpaper-1.jpg &
 
 ~/.config/polybar/launch.sh &
